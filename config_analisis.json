@@ -2,7 +2,7 @@
     "ligas": ["Premier League", "LaLiga", "Serie A", "Bundesliga", "Liga MX"],
     "periodo_analisis": {
       "inicio": "2021-01-01",
-      "fin": "2024-09-02" 
+      "fin": "2024-09-04" 
     },
     "frecuencia_actualizacion": "diaria"
   }
