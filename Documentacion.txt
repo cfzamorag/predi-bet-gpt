@@ -1,0 +1,163 @@
+Objetivos Técnicos del Proyecto PREDI BET-GPT
+
+1. Objetivo Principal del Sistema
+El sistema PREDI BET-GPT tiene como objetivo desarrollar un modelo predictivo avanzado que logre:
+
+Alcanzar una precisión de al menos 85% en las predicciones de resultados de los partidos en las ligas seleccionadas.
+Garantizar la cobertura de predicciones en tiempo real para todas las ligas definidas.
+2. Métricas de Rendimiento
+Para evaluar el rendimiento del sistema, se utilizarán las siguientes métricas clave:
+
+Precisión (Accuracy): Medida del porcentaje de predicciones correctas realizadas por el modelo. Indicador general de la calidad del modelo.
+Recall (Sensibilidad): Proporción de verdaderos positivos entre todos los positivos reales. Es especialmente importante en situaciones donde el costo de los falsos negativos es alto.
+F1-Score: Media armónica de la precisión y el recall. Ideal para conjuntos de datos desbalanceados, donde se requiere un balance entre precisión y sensibilidad.
+Tasa de Error: Porcentaje de predicciones incorrectas realizadas por el modelo. Esta métrica complementa la precisión y ayuda a identificar áreas de mejora en el modelo.
+3. Roadmap de Funcionalidades y Cronograma de Desarrollo
+El desarrollo del sistema se divide en fases claramente definidas, cada una con sus objetivos específicos y plazos de entrega.
+
+Fases del Proyecto:
+Fase 1: Definición de Objetivos y Configuración del Entorno (0-2 meses)
+
+-Definir objetivos técnicos y configuraciones iniciales.
+-Configurar el entorno de desarrollo y herramientas necesarias.
+-Seleccionar ligas de fútbol y periodo de análisis.
+
+Fase 2: Investigación y Selección de Fuentes de Datos (2-3 meses)
+
+-Identificar y validar fuentes de datos deportivas, meteorológicas y de noticias relevantes.
+-Desarrollar scripts de conexión a APIs y scraping de datos.
+
+Fase 3: Configuración de la Infraestructura de Almacenamiento y Procesamiento (3-4 meses)
+
+-Implementar bases de datos relacionales y NoSQL.
+-Configurar un pipeline ETL para la ingesta, transformación y almacenamiento de datos.
+
+Fase 4: Recolección e Ingesta de Datos (4-5 meses)
+
+-Recopilar datos históricos y en tiempo real.
+-Asegurar la calidad y consistencia de los datos.
+
+Fase 5: Preprocesamiento Avanzado y Análisis Exploratorio de Datos (5-6 meses)
+
+-Transformar y preparar los datos para el modelado.
+-Identificar patrones y correlaciones relevantes.
+
+Fase 6: Desarrollo de Modelos Predictivos Iniciales (6-8 meses)
+
+-Implementar modelos de Machine Learning (ML) y Deep Learning (DL) básicos.
+-Evaluar el rendimiento inicial de los modelos.
+
+Fase 7: Optimización de Modelos Predictivos (8-10 meses)
+
+-Ajustar hiperparámetros para mejorar el rendimiento.
+-Implementar modelos de ensamble y selección final del modelo óptimo.
+
+Fase 8: Automatización del Flujo de Trabajo y Monitorización (10-11 meses)
+
+-Automatizar todo el flujo de trabajo desde la ingesta de datos hasta la generación de predicciones.
+-Desarrollar un sistema de monitorización para supervisar el rendimiento del modelo.
+
+Fase 9: Despliegue del Sistema en Producción (11-12 meses)
+
+-Desplegar el sistema en un entorno de producción en la nube.
+-Asegurar la seguridad, estabilidad y rendimiento óptimo del sistema.
+
+Fase 10: Mantenimiento, Innovación Continua y Expansión (12+ meses)
+
+-Realizar mantenimiento regular y actualizaciones del sistema.
+-Expandir la cobertura del sistema a nuevas ligas o deportes.
+-Incorporar nuevas técnicas y tecnologías para mantener el liderazgo del sistema.
+
+4. Plazos y Entregables Clave
+
+-Cada fase tendrá un conjunto de entregables específicos:
+
+Fase 1-3: Documentación técnica, scripts de conexión a APIs, configuración de bases de datos.
+Fase 4-6: Conjunto de datos limpiados y preparados, modelos iniciales implementados.
+Fase 7-9: Modelos optimizados y desplegados, pipelines automatizados.
+Fase 10: Plan de expansión, documentación de mejoras y mantenimiento.
+
+
+Métricas de Rendimiento
+
+Para medir la efectividad del sistema predictivo PREDI BET-GPT, se utilizarán las siguientes métricas clave:
+
+1.	Precisión (Accuracy):
+
+•	Definición: Porcentaje de predicciones correctas realizadas por el modelo.
+
+•	Cálculo: (TP+TN)/(TP+TN+FP+FN)(\text{TP} + \text{TN}) / (\text{TP} + \text{TN} + \text{FP} + \text{FN})(TP+TN)/(TP+TN+FP+FN), donde:
+
+	-TP: Verdaderos Positivos
+	-TN: Verdaderos Negativos
+	-FP: Falsos Positivos
+	-FN: Falsos Negativos
+
+•	Propósito: Evaluar la capacidad general del modelo para hacer predicciones correctas.
+
+2.	Recall (Sensibilidad):
+
+Definición: Proporción de positivos reales correctamente identificados por el modelo.
+
+•	Cálculo: TP/(TP+FN)\text{TP} / (\text{TP} + \text{FN})TP/(TP+FN)
+
+•	Propósito: Medir la capacidad del modelo para detectar todos los eventos positivos, reduciendo la cantidad de falsos negativos.
+
+3.	F1-Score:
+
+•	Definición: Media armónica de la precisión y el recall.
+
+•	Cálculo: 2×(Precisioˊn×RecallPrecisioˊn+Recall)2 \times \left( \frac{\text{Precisión} \times \text{Recall}}{\text{Precisión} + \text{Recall}} \right)2×(Precisioˊn+RecallPrecisioˊn×Recall)
+
+•	Propósito: Proporcionar una medida equilibrada cuando se necesita encontrar un equilibrio entre precisión y recall.
+
+4.	Tasa de Error:
+
+•	Definición: Porcentaje de predicciones incorrectas realizadas por el modelo.
+
+•	Cálculo: (FP+FN)/(TP+TN+FP+FN)(\text{FP} + \text{FN}) / (\text{TP} + \text{TN} + \text{FP} + \text{FN})(FP+FN)/(TP+TN+FP+FN)
+
+•	Propósito: Identificar el nivel de error del modelo y guiar las mejoras necesarias.
+
+
+Roadmap de Funcionalidades y Cronograma de Desarrollo
+
+Objetivo General: Desarrollar un sistema predictivo avanzado, basado en técnicas de ML y DL, capaz de predecir con precisión los resultados de partidos de fútbol en tiempo real.
+Funcionalidades Clave:
+
+1.	Recolección e Ingesta de Datos:
+•	Integración de APIs deportivas para la ingesta de datos históricos y en tiempo real.
+•	Desarrollo de scripts de scraping para obtener datos adicionales de fuentes no estructuradas.
+•	Automatización del flujo de datos mediante pipelines ETL.
+
+2.	Preprocesamiento y Limpieza de Datos:
+•	Aplicación de técnicas de limpieza de datos, como eliminación de duplicados y manejo de valores faltantes.
+•	Normalización y escalado de características para preparación del modelado.
+•	Codificación de variables categóricas.
+
+3.	Desarrollo de Modelos Predictivos:
+•	Implementación de modelos de ML/DL (Random Forest, XGBoost, LightGBM, Redes Neuronales).
+•	Ajuste y optimización de hiperparámetros mediante técnicas como GridSearchCV y Bayesian Optimization.
+•	Comparación de modelos para seleccionar el más preciso y robusto.
+
+4.	Automatización y Actualización en Tiempo Real:
+•	Creación de un pipeline automatizado para la ingesta de datos, preprocesamiento, entrenamiento de modelos y generación de predicciones.
+•	Configuración de actualizaciones en tiempo real para ajustar los modelos predictivos con nuevos datos.
+
+5.	Desarrollo de Interfaz de Usuario:
+•	Creación de una interfaz web amigable utilizando frameworks como Flask o Django.
+•	Integración de visualizaciones interactivas (gráficos, mapas de calor) para interpretar los resultados de predicciones.
+
+
+
+Fase	Actividades                             Principales	                                                                Duración Estimada
+Fase 1: Planificación y Configuración	        Definición de objetivos, configuración del entorno, selección de ligas	    1 mes
+Fase 2: Recolección e Ingesta de Datos	        Implementación de APIs y scraping, limpieza de datos	                    2 meses
+Fase 3: Preprocesamiento de Datos	            Normalización, escalado, codificación, análisis de correlación	            1 mes
+Fase 4: Desarrollo de Modelos Iniciales	        Implementación y evaluación de modelos básicos de ML y DL	                3 meses
+Fase 5: Optimización de Modelos	                Ajuste de hiperparámetros, ensamble de modelos	                            2 meses
+Fase 6: Automatización del Flujo de Trabajo	    Creación de pipelines, automatización y actualización en tiempo real	    1 mes
+Fase 7: Desarrollo de Interfaz de Usuario	    Creación de la interfaz, integración de visualizaciones	                    2 meses
+Fase 8: Validación y Pruebas Exhaustivas	    Pruebas de precisión, robustez, validación en escenarios reales	            2 meses
+Fase 9: Despliegue en Producción	            Despliegue en la nube, configuración de seguridad y monitoreo	            1 mes
+Fase 10: Mantenimiento y Mejora Continua	    Mantenimiento regular, incorporación de nuevas técnicas	                    Continuo

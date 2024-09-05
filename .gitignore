@@ -1,0 +1,21 @@
+# Ignorar carpetas y archivos del sistema y del usuario
+AppData/
+*.jtx
+*.log
+*.ini
+*.blf
+*.regtrans-ms
+NTUSER.DAT*
+Contacts/
+Downloads/
+Favorites/
+Links/
+Music/
+OneDrive/
+Saved Games/
+Searches/
+Videos/
+mi_entorno/
+predibet_env/
+*.ipynb_checkpoints/
+
